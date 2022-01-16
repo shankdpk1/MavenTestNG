@@ -5,8 +5,7 @@ public class TakeParametersFromPOMXML {
 
     @Parameters({"browser","clientname","country","status","multilinestring"})   //take same name as mentioned in POM.XML TagName
     @Test
-    void takingParameterFromPOM(String myBrowser, String myClientName, String myCountry, String myStatus, String mymultilinestring){
-        System.out.println("parameter mymultilinestring is "+ mymultilinestring);
+    void takingParameterFromPOM(String myBrowser, String myClientName, String myCountry, String myStatus){
         System.out.println("parameter country is "+ myCountry);
         System.out.println("parameter status is "+ myStatus);
         System.out.println("parameter browser is "+ myBrowser);
@@ -20,6 +19,13 @@ public class TakeParametersFromPOMXML {
         }
 
     }
+
+//    @Parameters({"multilinestring"})   //take same name as mentioned in POM.XML TagName
+//    @Test
+//    void takingParameterFromPOM2(String mymultilinestring){
+//        System.out.println("parameter mymultilinestring is "+ mymultilinestring);
+//
+//    }
 
     @Parameters({"browser"})   //take same name as mentioned in POM.XML TagName
     @Test
