@@ -43,7 +43,7 @@
 <!--                        <buildDirectory>${project.build.directory}</buildDirectory>-->
 
                         <browser>${BrowserVar}</browser>
-                        <clientname>${clientnameVar}</clientname>
+<!--                        <clientname>${clientnameVar}</clientname>-->
                     </systemPropertyVariables>
 
 
