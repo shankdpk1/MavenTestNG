@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+
+<suite name="All Test Suite">
+
+
+    <listeners>
+        <listener class-name="listeners.listenersClass"></listener>
+    </listeners>
+
+
+    <test verbose="2" preserve-order="true" name="TestNGPractice test1">
+
+
+        <classes>
+
+            <class name="SecondTestcase">
+                <methods>
+                    <include name="myMethod1SecondTestcase"/>
+                    <include name="myMethod2SecondTestcase"/>
+                    <include name="myMethod3SecondTestcase"/>
+                </methods>
+
+            </class>
+
+            <class name="FirstTestcase"/>
+
+        </classes>
+
+
+    </test>
+
+
+
+    <test verbose="2" preserve-order="true" name="TestNGPractice test2">
+
+
+        <classes>
+
+            <class name="SecondTestcase">
+                <methods>
+                    <include name="myMethod1SecondTestcase"/>
+                    <include name="myMethod2SecondTestcase"/>
+                    <include name="myMethod3SecondTestcase"/>
+                </methods>
+
+            </class>
+
+            <class name="FirstTestcase"/>
+
+        </classes>
+
+
+    </test>
+
+    <test verbose="2" preserve-order="true" name="TestNGPractice Grouping">
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+
+
+        <classes>
+
+            <class name="GroupTestcases"/>
+
+        </classes>
+
+
+    </test>
+
+    <test verbose="2" preserve-order="true" name="TestNGPractice Grouping1">
+
+        <groups>
+            <run>
+                <exclude name="smoke"/>
+            </run>
+        </groups>
+
+
+        <classes>
+
+            <class name="GroupTestcases"/>
+
+        </classes>
+
+
+    </test>
+
+
+
+    <test verbose="2" preserve-order="true" name="TestNGPractice Parameterization">
+
+        <parameter name="fName" value="John"/>
+        <parameter name="lName" value="Kerry"/>
+        <classes>
+            <class name="Parameterization"/>
+        </classes>
+
+    </test>
+
+
+
+    <parameter name="fName" value="John"/>
+    <parameter name="lName" value="Kerry"/>
+    <test verbose="2" preserve-order="true" name="TestNGPractice Parameterization 1">
+
+        <classes>
+            <class name="Parameterization"/>
+        </classes>
+
+    </test>
+
+
+    <test verbose="2" preserve-order="true" name="TestNGPractice dataprovider">
+
+        <classes>
+            <class name="DataProviderClass"/>
+        </classes>
+
+    </test>
+
+
+    <test verbose="2" preserve-order="true" name="TestNGPractice dataprovideruser">
+
+        <classes>
+            <class name="DataProviderClass"/>
+        </classes>
+
+    </test>
+
+
+    <test verbose="2" preserve-order="true" name="TestNGPractice paralleltest methods">
+
+        <classes>
+            <class name="paralleltesting.ParallelTest1"/>
+            <class name="DataProviderUser"/>
+        </classes>
+
+    </test>
+
+
+
+    <test verbose="2" preserve-order="true" name="TestNGPractice listenersClassUseThruTestNGXML">
+
+        <classes>
+            <class name="listeners.listenersClassUseThruTestNGXML"/>
+        </classes>
+
+    </test>
+
+</suite>
