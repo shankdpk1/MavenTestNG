@@ -26,6 +26,7 @@ public class TakeParametersFromPOMXML {
 //        System.out.println("parameter mymultilinestring is "+ mymultilinestring);
 //
 //    }
+
     
 
     @Parameters({"browser"})   //take same name as mentioned in POM.XML TagName
