@@ -53,6 +53,8 @@
 <!--                    mvn clean test -DBrowserVar=ie -DclientnameVar=john -DcountryVar=Cananda -DstatusVar=Y -DMultiLineStringVar=MultiLineTestData-->
 <!--                    mvn clean test -DBrowserVar=ie -DclientnameVar=john -DcountryVar=Cananda -DstatusVar=Y-->
 
+<!--                    in Jenkins- -->
+<!--                    clean install -DBrowserVar=${Browser} -DclientnameVar=${clientname} -DcountryVar=${Country} -DstatusVar=${Status} -DMultiLineStringVar=${MultiLineString}-->
 
                 </configuration>
             </plugin>
