@@ -27,7 +27,6 @@ public class TakeParametersFromPOMXML {
 //
 //    }
 
-    
 
     @Parameters({"browser"})   //take same name as mentioned in POM.XML TagName
     @Test
