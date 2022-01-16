@@ -153,4 +153,13 @@
 
     </test>
 
+
+    <test verbose="2" preserve-order="true" name="TestNGPractice TakingParameterfromPOMXML">
+
+        <classes>
+            <class name="TakeParametersFromPOMXML"/>
+        </classes>
+
+    </test>
+
 </suite>

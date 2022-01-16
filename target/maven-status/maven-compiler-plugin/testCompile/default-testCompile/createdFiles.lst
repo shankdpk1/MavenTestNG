@@ -8,4 +8,5 @@ DependencyAlwaysRunTest.class
 listeners\listenersClassUse.class
 FirstTestcase.class
 listeners\listenersClass.class
+TakeParametersFromPOMXML.class
 Parameterization.class

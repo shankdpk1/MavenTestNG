@@ -9,7 +9,6 @@
     <version>1.0-SNAPSHOT</version>
 
 
-
     <!-- Keeping plugins apache inside build and plugin tags -->
     <build>
         <plugins>
@@ -29,12 +28,24 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.17</version>
-                <!--                <configuration>-->
-                <!--                    &lt;!&ndash; This will call testNG XML file &ndash;&gt;-->
-                <!--                    <suiteXmlFiles>-->
-                <!--                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>-->
-                <!--                    </suiteXmlFiles>-->
-                <!--                </configuration>-->
+                <configuration>
+                    <!-- This will call testNG XML file -->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+
+
+
+                    <systemPropertyVariables>
+
+
+<!--                        <propertyName>propertyValue</propertyName>-->
+<!--                        <buildDirectory>${project.build.directory}</buildDirectory>-->
+
+                        <browser>${Browser}</browser>
+                    </systemPropertyVariables>
+
+                </configuration>
             </plugin>
 
         </plugins>
@@ -125,7 +136,6 @@
         </dependency>
 
 
-
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -172,7 +182,6 @@
 
 
     </dependencies>
-
 
 
 </project>
