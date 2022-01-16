@@ -44,6 +44,9 @@
 
                         <browser>${BrowserVar}</browser>
                         <clientname>${clientnameVar}</clientname>
+                        <country>${countryVar}</country>
+                        <status>${statusVar}</status>
+                        <multilinestring>${MultiLineTest}</multilinestring>
                     </systemPropertyVariables>
 
 <!--                    run below cmd in cmd -->

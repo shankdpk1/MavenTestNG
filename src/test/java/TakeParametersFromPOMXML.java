@@ -3,9 +3,12 @@ import org.testng.annotations.Test;
 
 public class TakeParametersFromPOMXML {
 
-    @Parameters({"browser","clientname"})   //take same name as mentioned in POM.XML TagName
+    @Parameters({"browser","clientname","country","status","multilinestring"})   //take same name as mentioned in POM.XML TagName
     @Test
-    void takingParameterFromPOM(String myBrowser, String myClientName){
+    void takingParameterFromPOM(String myBrowser, String myClientName, String myCountry, String myStatus, String mymultilinestring){
+        System.out.println("parameter mymultilinestring is "+ mymultilinestring);
+        System.out.println("parameter country is "+ myCountry);
+        System.out.println("parameter status is "+ myStatus);
         System.out.println("parameter browser is "+ myBrowser);
         System.out.println("parameter clntnm is "+ myClientName);
 
