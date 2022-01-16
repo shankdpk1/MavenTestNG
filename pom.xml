@@ -42,7 +42,7 @@
 <!--                        <propertyName>propertyValue</propertyName>-->
 <!--                        <buildDirectory>${project.build.directory}</buildDirectory>-->
 
-                        <browser>${Browser}</browser>
+                        <browser>${BrowserVar}</browser>
                     </systemPropertyVariables>
 
                 </configuration>
