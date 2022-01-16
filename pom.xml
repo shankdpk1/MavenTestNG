@@ -43,8 +43,11 @@
 <!--                        <buildDirectory>${project.build.directory}</buildDirectory>-->
 
                         <browser>${BrowserVar}</browser>
-<!--                        <clientname>${clientnameVar}</clientname>-->
+                        <clientname>${clientnameVar}</clientname>
                     </systemPropertyVariables>
+
+<!--                    run below cmd in cmd -->
+<!--                    mvn clean test -DBrowserVar=ie -DclientnameVar=john-->
 
 
                 </configuration>
