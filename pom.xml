@@ -45,6 +45,7 @@
                         <browser>${BrowserVar}</browser>
                     </systemPropertyVariables>
 
+                    
                 </configuration>
             </plugin>
 
