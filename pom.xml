@@ -46,11 +46,11 @@
                         <clientname>${clientnameVar}</clientname>
                         <country>${countryVar}</country>
                         <status>${statusVar}</status>
-                        <multilinestring>${MultiLineString}</multilinestring>
+                        <multilinestring>${MultiLineStringVar}</multilinestring>
                     </systemPropertyVariables>
 
 <!--                    run below cmd in cmd -->
-<!--                    mvn clean test -DBrowserVar=ie -DclientnameVar=john -DcountryVar=Cananda -DstatusVar=Y -DMultiLineTest=MultiLineTest-->
+<!--                    mvn clean test -DBrowserVar=ie -DclientnameVar=john -DcountryVar=Cananda -DstatusVar=Y -DMultiLineStringVar=MultiLineTest-->
 
 
                 </configuration>
